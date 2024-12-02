@@ -81,7 +81,7 @@
 			jQuery.ajax({
 				type: 'POST',
 				url: cwp_vars_params.ajax_url,
-				data:'action=cwp_import_dummy_data&data_type=&nonce='+cwp_vars_params.nonce,
+				data:'action=cwp_import_dummy_data&data_type=dummy&nonce='+cwp_vars_params.nonce,
 				dataType: 'json',
 				success: function (response) {
 					if( response.success === 'true' ){
